@@ -24,7 +24,7 @@ hs_err_pid*
 
 *.pfx
 
-.iml
+*.iml
 
 target
 
