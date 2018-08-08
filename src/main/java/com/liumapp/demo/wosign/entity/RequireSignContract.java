@@ -12,6 +12,21 @@ import org.springframework.stereotype.Component;
 @Component
 public class RequireSignContract {
 
+    private String tokenid;
+
+    private String actiontype;
+
+    private String filebase;
+
+    private String fileformat;//签署文档格式
+
+    private String orderNumber;
+
+    private String tempid; //模板id
+
+    private String suject; //签署合同标签
+
+    private String password;
 
 
 }
