@@ -1,8 +1,10 @@
 package com.liumapp.demo.wosign.controller;
 
 import com.liumapp.demo.wosign.entity.SignedContract;
+import com.liumapp.qtools.file.basic.FileTool;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,6 +19,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("notify")
 public class GetSignedContractController {
+
+    @Value("${custom.pdfPath}")
+    private String pdfPath;
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
