@@ -3,3 +3,4 @@ server:
 
 custom:
   pfxPath: /usr/local/tomcat/project/wosign-contract/data/pfx/pfx.pfx
+  picPath: /usr/local/tomcat/project/wosign-contract/data/pic/
