@@ -18,16 +18,16 @@ public class SignedContract {
 
     private String errorcode;
 
-    private ExtendedData extendedData;
+    private ExtendData extendData;
 
     public SignedContract() {
     }
 
-    public SignedContract(String actiontype, Integer status, String errorcode, ExtendedData extendedData) {
+    public SignedContract(String actiontype, Integer status, String errorcode, ExtendData extendData) {
         this.actiontype = actiontype;
         this.status = status;
         this.errorcode = errorcode;
-        this.extendedData = extendedData;
+        this.extendData = extendData;
     }
 
     public String getActiontype() {
@@ -57,12 +57,12 @@ public class SignedContract {
         return this;
     }
 
-    public ExtendedData getExtendedData() {
-        return extendedData;
+    public ExtendData getExtendData() {
+        return extendData;
     }
 
-    public SignedContract setExtendedData(ExtendedData extendedData) {
-        this.extendedData = extendedData;
+    public SignedContract setExtendData(ExtendData extendData) {
+        this.extendData = extendData;
         return this;
     }
 
@@ -72,7 +72,7 @@ public class SignedContract {
                 "actiontype='" + actiontype + '\'' +
                 ", status=" + status +
                 ", errorcode='" + errorcode + '\'' +
-                ", extendedData=" + extendedData.toString() +
+                ", extendedData=" + extendData.toString() +
                 '}';
     }
 }

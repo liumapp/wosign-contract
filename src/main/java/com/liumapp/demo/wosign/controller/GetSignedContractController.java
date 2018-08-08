@@ -24,6 +24,12 @@ public class GetSignedContractController {
     public String index (@RequestBody SignedContract signedContract) {
         logger.info("get info : ");
         logger.info(signedContract.toString());
+        return "success";
+    }
+
+    @RequestMapping("/test")
+    public String testConnect () {
+        return "success";
     }
 
 }

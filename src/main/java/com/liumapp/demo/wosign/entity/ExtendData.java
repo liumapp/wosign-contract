@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
  * @date 2018/8/8
  */
 @Component
-public class ExtendedData {
+public class ExtendData {
 
     private String signid;
 
@@ -20,10 +20,10 @@ public class ExtendedData {
 
     private String hash;
 
-    public ExtendedData() {
+    public ExtendData() {
     }
 
-    public ExtendedData(String signid, String ordernumber, String content, String hash) {
+    public ExtendData(String signid, String ordernumber, String content, String hash) {
         this.signid = signid;
         this.ordernumber = ordernumber;
         this.content = content;
@@ -34,7 +34,7 @@ public class ExtendedData {
         return signid;
     }
 
-    public ExtendedData setSignid(String signid) {
+    public ExtendData setSignid(String signid) {
         this.signid = signid;
         return this;
     }
@@ -43,7 +43,7 @@ public class ExtendedData {
         return ordernumber;
     }
 
-    public ExtendedData setOrdernumber(String ordernumber) {
+    public ExtendData setOrdernumber(String ordernumber) {
         this.ordernumber = ordernumber;
         return this;
     }
@@ -52,7 +52,7 @@ public class ExtendedData {
         return content;
     }
 
-    public ExtendedData setContent(String content) {
+    public ExtendData setContent(String content) {
         this.content = content;
         return this;
     }
@@ -61,7 +61,7 @@ public class ExtendedData {
         return hash;
     }
 
-    public ExtendedData setHash(String hash) {
+    public ExtendData setHash(String hash) {
         this.hash = hash;
         return this;
     }
