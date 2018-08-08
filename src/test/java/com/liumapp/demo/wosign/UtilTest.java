@@ -1,7 +1,10 @@
 package com.liumapp.demo.wosign;
 
+import com.liumapp.qtools.file.base64.Base64FileTool;
 import junit.framework.TestCase;
 import org.junit.Test;
+
+import java.io.IOException;
 
 /**
  * @author liumapp
@@ -12,9 +15,12 @@ import org.junit.Test;
  */
 public class UtilTest extends TestCase {
 
+    private String dataPath = "/usr/local/tomcat/project/wosign-contract/data/pdf/";
+
     @Test
-    public void testOpenFileAndConvertToBase64 () {
-        
+    public void testOpenFileAndConvertToBase64 () throws IOException {
+        String base64File = Base64FileTool.filePathToBase64(dataPath + "test.pdf");
+        System.out.println(base64File);
     }
 
 }
