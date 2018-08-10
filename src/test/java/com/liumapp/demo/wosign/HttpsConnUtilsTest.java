@@ -52,7 +52,7 @@ public class HttpsConnUtilsTest {
                 .setActiontype("CreateSignOrder")
                 .setFilebase(Base64FileTool.filePathToBase64(pdfPath + "test.pdf"))
                 .setFileformat("pdf")
-                .setOrderNumber("wiejfisdjfiwe12312314")
+                .setOrderNumber("wiejfisdjfiwe12312317")
                 .setSubject("测试合同");
         SignerList signerList = new SignerList();
         SignList signList = new SignList();
